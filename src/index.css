@@ -1,0 +1,110 @@
+/* write your css here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body{
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top:3rem;
+    box-shadow: 0px 0px 1rem rgba(0,0,0,0.24) inset;
+    padding: 1vh 2vw;
+    user-select: none;
+    border-radius: 1rem;
+}
+.cards{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.card{
+    width: 400px;
+    height: max-content;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+}
+.image{
+    width: 380px;
+    aspect-ratio: 1/1;
+    border-radius: 3px;
+    object-fit: cover;
+}
+.tour-info{
+    margin: 20px 5px;    
+}
+.tour-price{
+    font-size: 1.3rem;
+    color:#1faa99;
+}
+.tour-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+.read-more{
+    color: #12b0e8;
+    cursor: pointer;
+}
+.btn-red{
+    margin-top: 18px;
+    padding: 10px 80px;
+    border: 1px solid #b4161b;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #b4161b21;
+    transition: all 0.2s ease-in-out;
+}
+.btn-red:hover{
+    background-color:red;
+    color:#fff;
+}
+.refress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.btn-white{
+    margin-top: 18px;
+    padding: 0.6rem 3rem;
+    cursor: pointer;
+    bottom: none;
+    outline: none;
+    border-radius: 0.1rem;
+    background: #e1dcdc;
+    transition: all 0.2s ease-in-out;
+}
+.btn-white:hover{
+    background-color: #d5d1d1;
+    color: #000;
+
+}
